@@ -1,0 +1,74 @@
+/* Ensures padding/border does not affect element width */
+* {
+    box-sizing: border-box;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust min size to 0 */
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+    padding: 0 2rem;
+    margin-top: 100px;
+    margin-left: 150px;
+    margin-right: 10px;
+    /* border: 3px solid blue; */
+}
+
+.card {
+    overflow: hidden;   /* Contains any overflowing content */
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: lightgray;
+    /* border: 3px solid greenyellow; */
+    max-width: 350px;
+    
+}
+
+.card img {
+    max-width: 250px;    /* Ensures image fits within card */
+    height: auto;
+    display: block;
+    -webkit-box-shadow: 8px 8px 11px -3px rgba(145,145,145,1);
+    -moz-box-shadow: 8px 8px 11px -3px rgba(145,145,145,1);
+    box-shadow: 8px 8px 11px -3px rgba(145,145,145,1);
+    /* border: 3px solid red; */
+}
+
+.card-body {
+    /* border: 3px solid red; */
+    /* max-width: 200px; */
+}
+
+.card-title {
+    /* border: 3px solid yellow; */
+}
+
+.card-text {
+    /* border: 3px solid grey; */
+}
+
+
+.btn-card-button {
+    background-color: #B43F3F;
+    border-color: #B43F3F;
+    border-radius: 0.35rem;
+    box-shadow: 0;
+    color: WHITE;
+    /* border: 3px solid purple;  */
+}
+
+.btn-card-button:hover {
+    background-color: #FF8225;
+    border-color: #FF8225;
+    color: WHITE;
+}
+
+.btn-card-button:focus {
+    background-color: #FF8225;
+    border-color: #FF8225;  
+    outline: none;
+    box-shadow: 0 0 0 5px #B43F3F;
+    color: WHITE;
+}

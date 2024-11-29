@@ -1,0 +1,36 @@
+
+.card {
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 4px grey;
+    width: 150px;
+    height: auto;
+}
+
+.card-body {
+    /* background-color: #F8EDED; */
+       background-color: RED; 
+}
+
+
+.btn-card-button {
+    background-color: #FF8225;
+    border-color: #FF8225;
+    border-radius: 0.35rem;
+    box-shadow: 0; 
+}
+
+.btn-card-button:hover {
+    background-color: #B43F3F;
+    border-color: #B43F3F;
+    
+}
+
+.btn-card-button:focus {
+    background-color: #B43F3F;
+    border-color: #B43F3F;  
+    outline: none;
+    box-shadow: 0 0 0 5px #FF8225;
+    
+}
+

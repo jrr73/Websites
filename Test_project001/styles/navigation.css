@@ -1,0 +1,34 @@
+.navBar {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 300px;
+    flex-direction: row;
+    background-color: RED;
+}
+
+.navItem {
+    max-width: 100px;
+    background-color: darkgray;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+}
+
+@media (max-width: 575px) {
+    .navBar {
+        flex-direction: column;
+        
+    }
+
+    .navItem {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.content {
+    background-color: WHITE;
+    flex-grow: 1; /* Allow the content to grow and take all available space */
+    padding: 10px;
+    overflow: auto; /* Optional: adds scrollbars if the content overflows */
+}

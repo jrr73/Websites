@@ -1,0 +1,80 @@
+/* ======================================= */
+/* ============ NAVIGATION =============== */
+/* ======================================= */
+
+.navbar-brand, .nav-link {
+    color: WHITE !important;
+}
+
+.navbar-brand:visited, .nav-link:visited {
+    color: WHITE !important;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: #FF8225 !important;
+}
+
+.navbar-brand:active, .nav-link:active {
+    color: #B43F3F !important;
+}
+
+.custom-navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-list' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5'/%3E%3C/svg%3E");
+    /* Adjust width, height, or other properties as needed */
+    border-radius: 0px;
+  }
+
+  .custom-navbar .navbar-toggler:focus,
+  .custom-navbar .navbar-toggler:active {
+    outline: none;       /* Removes the focus outline */
+    box-shadow: none;    /* Removes any box shadow */
+    border: none;        /* Removes border if needed */
+  }
+
+  .navbar-collapse {
+    max-height: 200px; /* Adjust based on your design */
+    overflow-y: auto; /* Enable vertical scrolling */
+ 
+}
+
+
+
+/* ======================================= */
+/* ======== NAVIGATION ALPHABETIC ======== */
+/* ======================================= */
+
+
+/* .container-fluid.nav-alphabetic {
+    margin-left: 100px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+} */
+
+/* .nav-alphabetic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 5px;
+    flex-shrink: 0;
+    flex-grow: 0;   
+}
+
+.nav-alphabetic-letter {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #B43F3F;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: top;
+    border-radius: 10px 10px 0px 0px;
+    color: WHITE;
+    
+} */
+
+/* .nav-alphabetic-letter:focus,
+.nav-alphabetic-letter:hover,
+.nav-alphabetic-letter:active {
+    background-color: #FF8225;
+    color: WHITE;
+} */
+

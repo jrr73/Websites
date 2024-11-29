@@ -1,0 +1,40 @@
+/* ======================================= */
+/* ============ HEADER =================== */
+/* ======================================= */
+
+.container-fluid.header {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.stack-container {
+    position: relative;
+    height: 150px;
+    width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+.header {
+    background-color: #173B45;
+    /* border: 3px solid lime; */
+    color: white;
+    /* height: 150px; */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header.navigation-main {
+    height: 150px;
+}
+
+.header.navigation-alphabetic {
+    height: 300px;
+}
+
