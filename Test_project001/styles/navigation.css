@@ -1,34 +1,53 @@
-.navBar {
+/* General reset */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Wrapper that holds header + main content */
+.wrapper {
     display: flex;
-    justify-content: flex-end;
-    margin-right: 300px;
-    flex-direction: row;
-    background-color: RED;
+    flex-direction: column;
+    height: 100%; /* Full height of the screen */
 }
 
-.navItem {
-    max-width: 100px;
-    background-color: darkgray;
-    margin-left: 15px;
-    margin-right: 15px;
-    
+.header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
 }
 
-@media (max-width: 575px) {
-    .navBar {
-        flex-direction: column;
-        
-    }
+/* Main content area with flexbox to manage menu and content */
+.main {
+    display: flex;
+    flex-grow: 1; /* This allows the content area to grow and fill remaining space */
+}
 
-    .navItem {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+.menu {
+    background-color: #e0e0e0;
+    width: 200px; /* Fixed width for horizontal layout */
+    padding: 15px;
+    display: flex;
+    flex-direction: column; /* Vertical menu layout by default */
+    flex-shrink: 0; /* Prevent shrinking */
 }
 
 .content {
-    background-color: WHITE;
-    flex-grow: 1; /* Allow the content to grow and take all available space */
-    padding: 10px;
-    overflow: auto; /* Optional: adds scrollbars if the content overflows */
+    flex-grow: 1; /* Make content area grow to take available space */
+    background-color: #e8e8e8;
+    padding: 20px;
+    overflow-y: auto; /* Handles overflow content */
+}
+
+/* Media query for smaller screens: stack the menu vertically */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column; /* Stack menu and content vertically */
+    }
+    .menu {
+        width: 100%; /* Take up full width for vertical layout */
+    }
 }
