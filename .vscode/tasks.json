@@ -9,7 +9,7 @@
         "-S",
         "localhost:8000",
         "-t",
-        "C:\\Users\\763721\\temp\\Documents\\WindowsTemp\\Websites\\Test_project002"
+        "C:\\Users\\763721\\temp\\Documents\\WindowsTemp\\Websites\\Test_project003final"
       ],
       "group": {
         "kind": "build",
